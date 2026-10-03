@@ -1,0 +1,36 @@
+/* Убираем все встроенные отступы у всех элементов */
+*, *::before, *::after {
+  box-sizing: border-box; /* Чтобы padding не раздувал ширину блоков */
+  margin: 0;
+  padding: 0;
+}
+
+/* Убираем стандартные маркеры у списков */
+ul, ol {
+  list-style: none;
+}
+
+/* Делаем ссылки обычным текстом по умолчанию */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Защищаем картинки от вылезания за границы своих блоков */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Убираем дефолтные рамки и фоны у кнопок и инпутов */
+button, input, textarea, select {
+  font: inherit;
+  background: transparent;
+  border: none;
+}
+
+/* Делаем так, чтобы при клике на кнопки всегда появлялся курсор-пальчик */
+button {
+  cursor: pointer;
+}
